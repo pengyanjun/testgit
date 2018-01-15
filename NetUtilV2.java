@@ -182,6 +182,7 @@ public class NetUtilV2 {
 
     private static void handleNewTokenResponse(JSONObject jsonObject) {
 		LogManager.e("pengyanjun", "handleNewTokenResponse=" + jsonObject);
+
         if (jsonObject == null) {
             return;
         }
