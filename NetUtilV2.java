@@ -181,6 +181,7 @@ public class NetUtilV2 {
     }
 
     private static void handleNewTokenResponse(JSONObject jsonObject) {
+		LogManager.e("pengyanjun", "handleNewTokenResponse:" + jsonObject);
         if (jsonObject == null) {
             return;
         }
@@ -197,6 +198,8 @@ public class NetUtilV2 {
             SysParamEntityManager.setParam(NewXyHttpRunnableV2.V2_TOKEN_EXPIRED_TIME, String.valueOf(tokenExpiredTime));
             SysParamEntityManager.setParam(NewXyHttpRunnableV2.V2_AESKEY, aesKey);
             SysParamEntityManager.setParam(NewXyHttpRunnableV2.V2_AESIV, aesIv);
+
+
 
 
             JSONArray array = bodyObject.optJSONArray("apilist");
