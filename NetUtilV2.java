@@ -198,12 +198,11 @@ public class NetUtilV2 {
             SysParamEntityManager.setParam(NewXyHttpRunnableV2.V2_AESKEY, aesKey);
             SysParamEntityManager.setParam(NewXyHttpRunnableV2.V2_AESIV, aesIv);
 
-
             JSONArray array = bodyObject.optJSONArray("apilist");
             ApiListUtils.saveApiList(array);
         }
         catch (Exception e) {
-            LogManager.e("peng", "handleApiListResponse : " + e.toString());
+            LogManager.e("peng", "handleNewTokenResponse : " + e.toString());
         }
         /*SDK-954 pengyanjun 20180108 end*/
     }
