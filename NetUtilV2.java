@@ -62,6 +62,7 @@ public class NetUtilV2 {
     private static boolean isRequestTokenIng = false;
 
     public static void queryNewTokenRequestIfNeed(boolean newthread, final XyCallBack tokenCallback) {
+		//测试日志
         /*SDK-953 pengyanjun 20180108 start*/
         if (!isTokenExpired()) {
             /*SDK-953 pengyanjun 20180108 end*/
